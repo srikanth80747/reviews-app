@@ -36,7 +36,7 @@ class ReviewsCarousel extends Component {
         <div className="content-container">
           <button
             type="button"
-            testid="leftArrow"
+            data-testid="leftArrow"
             className="arrow-button"
             onClick={this.onLeftArrow}
           >
@@ -52,11 +52,12 @@ class ReviewsCarousel extends Component {
             </div>
             <p className="name">{username}</p>
             <p className="company">{companyName}</p>
-            <p className="comment">{description}</p>
+            <p cl
+            assName="comment">{description}</p>
           </div>
           <button
             type="button"
-            testid="rightArrow"
+            data-testid="rightArrow"
             className="arrow-button"
             onClick={this.updateState}
           >
